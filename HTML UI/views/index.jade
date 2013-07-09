@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to #{title}
+    div.personasConectadas
+    div.conection
+        input(type="text",name="name",required,pattern="[a-zA-Z0-9]{4,16}",placeholder="Ingresa tu nick!")
+        input(type="submit",value="ingresar",name="submit")
