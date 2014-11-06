@@ -10,7 +10,7 @@ var nombreUsuario;
 var socket;
 window.onload=function(){
     console.log($('input[name="submit"]'));
-	socket = io.connect("http://mychatsockets.ap01.aws.af.cm/");
+	socket = io.connect("http://localhost:3030/");
 	//socket = io.connect("http://localhost:3030");
     $("[name='submit']").on({
         click:function(){
